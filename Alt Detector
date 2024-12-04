@@ -1,0 +1,51 @@
+-- ALTERNATE ACCOUNT DETECTION MIRAGE SPYWARE™
+-- Created by: Symance
+-- WARNING: Do not use unless you are ready to unleash maximum alt detection power 💥
+
+print("Loading alt detection system... please wait...")
+
+-- Variables (Do not touch!!!)
+local alts = {} -- list of alternate accounts
+local mainAccount = "OneTwoThree45Seven" -- this is your main account (no one can fool you now)
+local totalPlayers = 0 -- how many players exist? We don’t know. This will find out.
+
+-- Functions (Advanced programming stuff!!!)
+function isAltAccount(playerName)
+    -- The ultimate test
+    if string.len(playerName) < 10 then
+        print(playerName .. " is an alt! 🚨🚨🚨")
+        return true
+    elseif playerName:find("123") then
+        print(playerName .. " has numbers, must be fake!!! 🚨🚨🚨")
+        return true
+    elseif playerName:lower():find("alt") then
+        print(playerName .. " literally says 'alt' bro. 🚨🚨🚨")
+        return true
+    else
+        print(playerName .. " is clear. For now... 👀")
+        return false
+    end
+end
+
+-- Main Logic (DO NOT EDIT!!! 🚨🚨🚨)
+function detectAlts()
+    print("Starting alternate account detection...")
+    totalPlayers = totalPlayers + 1 -- just in case more players join while we’re coding
+    for i = 1, totalPlayers do
+        local playerName = "Player" .. i -- Player Fetching System
+        print("Checking player: " .. playerName)
+        if isAltAccount(playerName) then
+            table.insert(alts, playerName)
+        end
+    end
+end
+
+-- Run the script (Mega OP Feature 🚀)
+detectAlts()
+print("Detection complete. Banning " .. #alts .. " suspected alts now...")
+for _, alt in pairs(alts) do
+    print("Banned player: " .. alt)
+    -- Pretend banning works here
+end
+
+print("Alt detection system shutting down. You’re welcome.")
