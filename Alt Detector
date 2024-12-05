@@ -1,10 +1,4 @@
--- ALTERNATE ACCOUNT DETECTION MIRAGE SPYWARE™
--- Created by: Symance
--- WARNING: Do not use unless you are ready to unleash maximum alt detection power 💥
-
-print("Loading alt detection system... please wait...")
-
--- Variables (Do not touch!!!)
+-- ALn
 local alts = {} -- list of alternate accounts
 local mainAccount = "OneTwoThree45Seven" -- this is your main account (no one can fool you now)
 local totalPlayers = 0 -- how many players exist? We don’t know. This will find out.
